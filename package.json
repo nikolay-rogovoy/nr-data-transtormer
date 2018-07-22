@@ -1,0 +1,27 @@
+{
+    "name": "nr-data-transtormer",
+    "version": "0.0.1",
+    "description": "Transform raw data to group entity",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "tsc": "tsc",
+        "build": "node tools/pre-build.js && npm run tsc && node tools/copy.js",
+        "publish": "cd ./dist && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nikolay-rogovoy/nr-data-transtormer.git"
+    },
+    "author": "Nikolay Rogovoy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nikolay-rogovoy/nr-data-transtormer/issues"
+    },
+    "homepage": "https://github.com/nikolay-rogovoy/nr-data-transtormer#readme",
+    "devDependencies": {
+        "mocha": "^5.2.0",
+        "rimraf": "^2.6.2",
+        "typescript": "^2.9.2"
+    }
+}
